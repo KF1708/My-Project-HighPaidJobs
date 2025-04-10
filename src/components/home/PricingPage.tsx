@@ -13,7 +13,7 @@ export default function PricingPage() {
   };
 
   return (
-    <div className="dark:bg-stone-800 max-w-screen-xl mx-auto py-12">
+    <div className="dark:bg-stone-800 max-w-screen-xl mx-auto px-2 py-12">
       <div className="text-center mb-12">
         <h1 className="text-3xl md:text-5xl font-bold mb-4">
           Unlock Your Career Freedom!
@@ -24,7 +24,7 @@ export default function PricingPage() {
         </p>
       </div>
 
-      <div className="grid md:grid-cols-3 gap-6">
+      <div className="grid md:grid-cols-3 grid-cols-1 gap-6">
         {/* Starter Plan */}
         <div className="bg-card bg-gray-100 dark:bg-stone-700 dark:border-gray-500 rounded-lg p-8 border shadow-sm">
           <div className="mb-6">
@@ -81,12 +81,12 @@ export default function PricingPage() {
 
         {/* Essential Plan */}
         <div className="bg-blue-700 dark:bg-[#062068] rounded-lg p-8 border shadow-sm relative">
-          <h1 className="absolute rounded text-sm h-7 w-24 p-1 dark:bg-orange-400 dark:text-white -right-2 top-16 bg-yellow-500 text-black font-medium">
+          <h1 className="absolute rounded text-sm h-7 w-24 p-1 dark:bg-orange-400 dark:text-white -right-1 top-12 bg-yellow-500 text-black font-medium">
             Most Popular
           </h1>
           <div className="mb-6">
             <h2 className="text-xl font-bold text-white">Plan: Essential</h2>
-            <p className="text-primary-foreground/80 dark:text-blue-300">
+            <p className="text-primary-foreground/80 flex flex-wrap dark:text-blue-300">
               60 min technical interview and resume assessment
             </p>
           </div>
@@ -101,7 +101,7 @@ export default function PricingPage() {
               Upfront deposit, $99.99 installment for 24 months: Interest FREE
             </p>
           </div>
-          <hr className="bg-background w-[345px] md:w-[200px] mx-auto mb-1" />
+          <hr className="bg-background lg:w-[345px] md:w-[200px] mx-auto mb-1" />
           <div className="space-y-3  mb-40">
             <div className="flex items-start gap-2">
               <Check className="h-5 w-5  bg-blue-500 rounded-full text-white shrink-0 mt-0.5" />
@@ -152,7 +152,7 @@ export default function PricingPage() {
               Upfront deposit, $149.99 installment for 24 months: Interest FREE
             </p>
           </div>
-          <hr className="bg-background w-[345px] md:w-[200px] mx-auto mb-1" />
+          <hr className="bg-background lg:w-[345px] md:w-[200px] mx-auto mb-1" />
           <div className="space-y-3 mb-8">
             <div className="flex items-start gap-2">
               <Check className="h-5 w-5 bg-white dark:w-7 dark:text-gray-300 dark:bg-stone-800 rounded-full text-blue-600 shrink-0 mt-0.5" />

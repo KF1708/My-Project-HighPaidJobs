@@ -8,18 +8,9 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import DateTimePicker from "./DateTimePicker";
-import { Check } from "lucide-react";
-import {
-  AlertDialog,
-  AlertDialogAction,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
-} from "@/components/ui/alert-dialog";
+import Link from "next/link";
+
 export default function BookingForm() {
-  const [openDialog, setOpenDialog] = useState(false);
   // Form state
   const [formData, setFormData] = useState({
     name: "",
@@ -150,7 +141,6 @@ export default function BookingForm() {
       formData.dateTime
     ) {
       console.log("Form submitted:", formData);
-      setOpenDialog(true);
     }
   };
 
@@ -305,42 +295,16 @@ export default function BookingForm() {
           </div>
 
           <div className="flex justify-center mt-8 py-5">
-            <Button
-              type="submit"
-              className="bg-blue-800 dark:bg-[#062068] dark:hover:bg-blue-700 hover:bg-blue-700 text-white px-8 py-5 text-lg rounded-md"
-            >
-              Submit
-            </Button>
+            <Link href={"/submit"}>
+              <Button
+                type="submit"
+                className="bg-blue-800 dark:bg-[#062068] dark:hover:bg-blue-700 hover:bg-blue-700 text-white px-8 py-5 text-lg rounded-md"
+              >
+                Submit
+              </Button>
+            </Link>
           </div>
         </form>
-        <AlertDialog open={openDialog} onOpenChange={setOpenDialog}>
-          <AlertDialogContent className="max-w-md">
-            <div className="flex justify-center mb-6">
-              <div className="h-16 w-16 rounded-full bg-white flex items-center justify-center">
-                <Check className="h-12 w-12 text-blue-800 border-2 rounded-full border-blue-800" />
-              </div>
-            </div>
-
-            <AlertDialogHeader className="text-center">
-              <AlertDialogTitle className="text-2xl font-bold text-center">
-                Congratulations!
-              </AlertDialogTitle>
-              <div className="text-xl font-medium mb-2 text-center">
-                You have submitted successfully!
-              </div>
-              <AlertDialogDescription className="text-base text-center">
-                We&apos;ll contact you soon to confirm your 15-minute career
-                auditing session.
-              </AlertDialogDescription>
-            </AlertDialogHeader>
-
-            <AlertDialogFooter className="flex justify-center sm:justify-center">
-              <AlertDialogAction className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-2 text-lg">
-                Go Back
-              </AlertDialogAction>
-            </AlertDialogFooter>
-          </AlertDialogContent>
-        </AlertDialog>
       </div>
     </div>
   );

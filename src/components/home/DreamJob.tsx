@@ -91,7 +91,7 @@ const DreamJob = () => {
 
           {/* Right Part: Details on Hover */}
           <div className="p-5 bg-white dark:bg-stone-900 rounded-lg shadow flex border border-black flex-col justify-between h-50 col-span-2">
-            <div className="space-y-2 grid grid-cols-3 gap-5">
+            <div className="space-y-2 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5">
               {selectedItem.details.map((detail, index) => (
                 <div key={index} className="flex gap-2">
                   <div>

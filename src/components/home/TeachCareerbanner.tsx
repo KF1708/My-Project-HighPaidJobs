@@ -9,7 +9,7 @@ import Image from "next/image";
 export default function TechCareerBanner() {
   return (
     <div className="bg-gray-100 dark:bg-black py-10 ">
-      <div className="px-3 relative rounded-2xl lg:h-[355px] lg:w-[1200px] sm:w-[690px] h-[500px] w-[400px] md:h-[355px] md:w-[790px] max-w-screen-xl dark:bg-[#062068] mx-auto bg-blue-700 flex flex-col items-center text-center space-y-8">
+      <div className="px-3 relative rounded-2xl lg:h-[355px] lg:w-[1200px] sm:w-[690px] h-[500px] w-[300px] md:h-[355px] md:w-[790px] max-w-screen-xl dark:bg-[#062068] mx-auto bg-blue-700 flex flex-col items-center text-center space-y-8">
         <div>
           <div>
             <Image

@@ -55,9 +55,9 @@ export default function BookingForm() {
   };
 
   // Handle date time blur
-  //   const handleDateTimeBlur = () => {
-  //     setTouched((prev) => ({ ...prev, dateTime: true }));
-  //   };
+  // const handleDateTimeBlur = () => {
+  //   setTouched((prev) => ({ ...prev, dateTime: true }));
+  // };
 
   // Handle radio button changes
   const handleRadioChange = (name: string, value: string) => {
@@ -225,7 +225,7 @@ export default function BookingForm() {
               What is the best time for a 15-minute career auditing session?{" "}
               <span className="text-red-500">*</span>
             </Label>
-            <div className="">
+            <div className="w-[200px]">
               {" "}
               <DateTimePicker
                 value={formData.dateTime}

@@ -64,3 +64,7 @@
     @apply bg-background text-foreground;
   }
 }
+input[type="datetime-local"] {
+  z-index: 10; /* Ensure the picker doesn't overlap other UI elements */
+  position: relative;
+}

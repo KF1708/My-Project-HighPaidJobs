@@ -39,9 +39,9 @@ export async function POST(request: Request) {
     const amountInCents = Math.round(amount * 100);
 
     // Format the address
-    const formattedAddress = `${contactInfo.address}${
-      contactInfo.apt ? ", " + contactInfo.apt : ""
-    }`;
+    // const formattedAddress = `${contactInfo.address}${
+    //   contactInfo.apt ? ", " + contactInfo.apt : ""
+    // }`;
 
     // Get plan name based on planId
     const planNames: Record<string, string> = {

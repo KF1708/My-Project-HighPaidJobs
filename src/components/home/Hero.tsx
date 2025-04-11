@@ -64,16 +64,15 @@ const Hero = () => {
               99.99% GUARANTEED to get back your job!
             </h1>
 
-            <h1 className="text-white text-xl font-bold lg:text-6xl md:text-4xl py-10 sm:text-2xl">
-              Get your Six-Figure
-              <br />
+            <h1 className="text-white text-xl font-bold lg:text-5xl leading-none  md:text-4xl py-10 sm:text-2xl">
+              Get your Six-Figure <br />
               job back in{" "}
               <span className="text-yellow-500 relative">
                 8-16 Weeks{" "}
                 <Image
                   src={hero3}
                   alt="Hero decoration"
-                  className="left-2 absolute bottom-0"
+                  className="left-2 absolute buttom-0"
                 />
               </span>
               <br /> with our proven <br />
@@ -90,13 +89,13 @@ const Hero = () => {
             <div className="flex items-center gap-5 px-2 py-5">
               <Link href="#bookingfrom" scroll={true}>
                 {" "}
-                <button className="flex bg-yellow-500 lg:h-12 h-16 w-36 rounded-3xl text-sm cursor-pointer font-bold hover:bg-yellow-400 items-center mt-3 text-black lg:px-10">
+                <button className="flex bg-yellow-500 lg:h-12 lg:w-56 h-16 w-36 rounded-3xl text-sm cursor-pointer font-bold hover:bg-yellow-400 items-center mt-3 text-black lg:px-5">
                   Book Free Consultation{" "}
                   <FaAngleRight className="text-sm ml-2" />
                 </button>
               </Link>
               <Link href="#bookingfrom" scroll={true}>
-                <button className="flex bg-blue-700 dark:bg-[#062068] dark:hover:bg-blue-800 border border-amber-50 lg:h-12 h-16 w-36 rounded-3xl rounded-4xl text-sm text-white cursor-pointer font-bold hover:bg-blue-600 items-center mt-3 lg:px-10">
+                <button className="flex bg-blue-700 dark:bg-[#062068] dark:hover:bg-blue-800 border border-amber-50 lg:h-12 lg:w-56 h-16 w-36 rounded-3xl rounded-4xl text-sm text-white cursor-pointer font-bold hover:bg-blue-600 items-center mt-3 lg:pl-9">
                   Join Next Webinar <FaAngleRight className="text-sm ml-2" />
                 </button>
               </Link>
